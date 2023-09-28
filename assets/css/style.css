@@ -541,7 +541,13 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
-.footer { background-color: var(--cultured-3); }
+.footer {
+  background-image: url('/assets/images/bg-footer1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
 
 .footer-top .container {
   display: grid;
@@ -551,25 +557,43 @@ body {
 .footer-top .section-text { margin-block: 15px 22px; }
 
 .social-list {
+  padding-top: 20px;
   display: flex;
   gap: 15px;
 }
 
+/* logo footer */
+.logo-footer img {
+  width: 230px;
+  height: auto;
+}
+
+.logo-footer {
+  display: inline-block;
+}
+
+.logo-footer:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
 .social-link {
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  /* background-color: var(--white); */
   padding: 12px;
   border-radius: 50%;
   transition: var(--transition-1);
 }
 
 .social-link:is(:hover, :focus) {
-  background-color: var(--pumpkin);
+  background-color: #FFCB57;
   color: var(--white);
   transform: translateY(-2px);
 }
 
 .footer-list-title {
-  color: var(--eerie-black);
+  color: #FFCB57;
   font-family: var(--ff-roboto);
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
@@ -584,7 +608,7 @@ body {
 
 .footer-link:is(:hover, :focus),
 .footer-item .item-link:not(.address):is(:hover, :focus) {
-  color: var(--pumpkin);
+  color: #FFCB57;
 }
 
 .footer-item {
@@ -596,7 +620,7 @@ body {
 
 .footer-item ion-icon {
   flex-shrink: 0;
-  color: var(--pumpkin);
+  color: #FFCB57;
   font-size: 17px;
   margin-block-start: 2px;
 }
@@ -604,6 +628,9 @@ body {
 .footer-item .item-link {
   font-size: var(--fs-4);
   transition: var(--transition-1);
+}
+.footer-top {
+  padding-bottom: 40px;
 }
 
 .footer-bottom {
@@ -614,11 +641,6 @@ body {
 .copyright {
   font-size: var(--fs-4);
   text-align: center;
-}
-
-.copyright-link {
-  color: var(--pumpkin);
-  display: inline-block;
 }
 
 
@@ -633,7 +655,7 @@ body {
   position: fixed;
   bottom: 30px;
   right: -36px;
-  background-color: var(--pumpkin);
+  background-color: #FFCB57;
   color: var(--white);
   padding: 10px;
   border-radius: 50%;
@@ -1013,4 +1035,43 @@ body {
 
   .back-top-btn.active { transform: translateX(-80px); }
 
+}
+
+.section.blog {
+  background-color: #f0f0f0;
+  /* padding: 20px; */
+}
+
+.download img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Contact form */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #8F3694;
+}
+
+.form-label{
+  font-weight: 300;
+  color: #092032;
+}
+
+.image-section {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.custom-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem; 
+  padding-right: 3rem; 
+}
+
+form h1 {
+  color: #8F3694;
 }
